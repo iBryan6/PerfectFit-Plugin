@@ -77,13 +77,12 @@ class NM_Text_wooproduct extends PPOM_Inputs{
 						'type' => 'text',
 						'title' => __ ( 'Clase extra HTML', 'ppom' ),
 						'desc' => __ ( 'Inserte una(s) clase(s) adicional (separar por coma) para una mayor personalización.', 'ppom' ) 
-				),/* BRYAN HIDDEN MASKING
+				),
 				'input_mask' => array (
 						'type' => 'text',
-						'title' => __ ( 'Input Masking', 'ppom' ),
-						'desc' => __ ( 'Click options to see all Masking Options', 'ppom' ),
-						'link' => __ ( '<a href="https://github.com/RobinHerbots/Inputmask" target="_blank">Options</a>', 'ppom' ) 
-				), */
+						'title' => __ ( 'Masking', 'ppom' ),
+						'desc' => __ ( 'No usar', 'ppom' )
+				),
 				'width' => array (
 						'type' => 'select',
 						'title' => __ ( 'Anchura', 'ppom' ),
