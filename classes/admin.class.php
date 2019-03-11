@@ -27,7 +27,7 @@ class NM_PersonalizedProduct_Admin extends NM_PersonalizedProduct {
 		 * [1] TODO: change this for plugin admin pages
 		*/
 		$this->menu_pages = array ( array (
-				'page_title' => __('PPOM', "ppom"),
+				'page_title' => __('Perfecto Estilo', "ppom"),
 				'menu_title' => __('Perfecto Estilo', "ppom"),
 				'cap' => 'manage_options',
 				'slug' => "ppom",

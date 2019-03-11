@@ -21,7 +21,7 @@ class NM_Text_wooproduct extends PPOM_Inputs{
 		
 		$this -> plugin_meta = ppom_get_plugin_meta();
 		
-		$this -> title 		= __ ( 'Text Input', 'ppom' );
+		$this -> title 		= __ ( 'Campo de texto', 'ppom' );
 		$this -> desc		= __ ( 'regular text input', 'ppom' );
 		$this -> icon		= __ ( '<i class="fa fa-pencil-square-o" aria-hidden="true"></i>', 'ppom' );
 		$this -> settings	= self::get_settings();
@@ -65,18 +65,18 @@ class NM_Text_wooproduct extends PPOM_Inputs{
 				'minlength' => array (
 						'type' => 'text',
 						'title' => __ ( 'Min. Longitud', 'ppom' ),
-						'desc' => __ ( 'Minimo caracteres permitidos, dejar en blanco por defecto', 'ppom' )
+						'desc' => __ ( 'Minimo caracteres permitidos, dejar en blanco por defecto.', 'ppom' )
 				),
 				
 				'default_value' => array (
 						'type' => 'text',
-						'title' => __ ( 'Set default value', 'ppom' ),
-						'desc' => __ ( 'Pre-defined value for text input', 'ppom' )
+						'title' => __ ( 'Establecer el valor predeterminado', 'ppom' ),
+						'desc' => __ ( 'Valor predefinido para la entrada de texto.', 'ppom' )
 				),
 				'class' => array (
 						'type' => 'text',
-						'title' => __ ( 'Class', 'ppom' ),
-						'desc' => __ ( 'Insert an additional class(es) (separateb by comma) for more personalization.', 'ppom' ) 
+						'title' => __ ( 'Clase extra HTML', 'ppom' ),
+						'desc' => __ ( 'Inserte una(s) clase(s) adicional (separar por coma) para una mayor personalización.', 'ppom' ) 
 				),
 				'input_mask' => array (
 						'type' => 'text',

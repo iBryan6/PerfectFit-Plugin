@@ -263,7 +263,7 @@ class NM_PersonalizedProduct
 
 
         if (!$product->is_in_stock())
-        return $url;
+            return $url;
 
         $product_id = ppom_get_product_id($product);
         $ppom        = new PPOM_Meta($product_id);
@@ -287,7 +287,7 @@ class NM_PersonalizedProduct
     {
 
         if (!$product->is_in_stock())
-        return $text;
+            return $text;
 
         $product_id = ppom_get_product_id($product);
         $ppom        = new PPOM_Meta($product_id);
@@ -313,7 +313,7 @@ class NM_PersonalizedProduct
     {
 
         if ($feature != "ajax_add_to_cart")
-        return $support;
+            return $support;
 
         $product_id = ppom_get_product_id($product);
         $ppom        = new PPOM_Meta($product_id);
@@ -427,7 +427,7 @@ function nm_meta_bulk_action()
         // this is based on wp-admin/edit.php
         $sendback = remove_query_arg(array('nm_updated', 'nm_removed', 'untrashed', 'deleted', 'ids'), wp_get_referer());
         if (!$sendback)
-        $sendback = admin_url("edit.php?post_type=$post_type");
+            $sendback = admin_url("edit.php?post_type=$post_type");
 
         $pagenum = $wp_list_table->get_pagenum();
         $sendback = add_query_arg('paged', $pagenum, $sendback);
@@ -554,10 +554,10 @@ function get_product_meta($meta_id)
 {
 
     if (!$meta_id)
-    return;
+        return;
 
     if ($meta_id == 'None')
-    return;
+        return;
 
     global $wpdb;
 
@@ -653,7 +653,7 @@ function get_all_inputs()
     $nm_inputs = PPOM_Inputs();
     // webcontact_pa($this->plugin_meta);
 
-    // registering all inputs here
+    // BRYAN registering all inputs here
 
     $all_inputs = array(
 
@@ -669,6 +669,8 @@ function get_all_inputs()
         'image'     => $nm_inputs->get_input('image'),
         'color'     => $nm_inputs->get_input('color'),
         'palettes'     => $nm_inputs->get_input('palettes'),
+        'section'     => $nm_inputs->get_input('section'),
+        'measure'     => $nm_inputs->get_input('measure'),
     );
 
     return apply_filters('ppom_all_inputs', $all_inputs, $nm_inputs);
@@ -724,7 +726,7 @@ function add_slashes_array($arr)
     asort($arr);
     $ReturnArray = array();
     foreach ($arr as $k => $v)
-    $ReturnArray[$k] = (is_array($v)) ? $this->add_slashes_array($v) : addslashes(esc_html($v));
+        $ReturnArray[$k] = (is_array($v)) ? $this->add_slashes_array($v) : addslashes(esc_html($v));
     return $ReturnArray;
 }
 
@@ -733,8 +735,8 @@ function ppom_decode_entities($arr)
     // asort($arr);
     $ReturnArray = array();
     foreach ($arr as $k => $v)
-    // ppom_pa($v);
-    $ReturnArray[$k] = (is_array($v) || is_object($v)) ? $this->ppom_decode_entities($v) : html_entity_decode($v);
+        // ppom_pa($v);
+        $ReturnArray[$k] = (is_array($v) || is_object($v)) ? $this->ppom_decode_entities($v) : html_entity_decode($v);
     return $ReturnArray;
 }
 
