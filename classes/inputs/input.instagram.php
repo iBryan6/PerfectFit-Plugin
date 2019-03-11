@@ -62,29 +62,29 @@ class NM_Instagram_wooproduct extends PPOM_Inputs{
 		return array (
 				'title' => array (
 						'type' => 'text',
-						'title' => __ ( 'Title', "ppom" ),
+						'title' => __ ( 'Titulo', "ppom" ),
 						'desc' => __ ( 'It will be shown as field label', "ppom" )
 				),
 				'data_name' => array (
 						'type' => 'text',
-						'title' => __ ( 'Data name', "ppom" ),
-						'desc' => __ ( 'REQUIRED: The identification name of this field, that you can insert into body email configuration. Note:Use only lowercase characters and underscores.', "ppom" )
+						'title' => __ ( 'Nombre en la Base de Datos', "ppom" ),
+						'desc' => __ ( 'REQUERIDO: Es el nombre que tendra como identificador en la tabla de grupos.', "ppom" )
 				),
 				'description' => array (
 						'type' => 'text',
-						'title' => __ ( 'Description', "ppom" ),
+						'title' => __ ( 'Descripción', "ppom" ),
 						'desc' => __ ( 'Small description, it will be diplay near name title.', "ppom" )
 				),
 				'error_message' => array (
 						'type' => 'text',
-						'title' => __ ( 'Error message', "ppom" ),
+						'title' => __ ( 'Mensaje de error', "ppom" ),
 						'desc' => __ ( 'Insert the error message for validation.', "ppom" )
 				),
 	
 				'required' => array (
 						'type' => 'checkbox',
-						'title' => __ ( 'Required', "ppom" ),
-						'desc' => __ ( 'Select this if it must be required.', "ppom" )
+						'title' => __ ( 'Necesario', "ppom" ),
+						'desc' => __ ( 'Seleccione esto si es necesario llenar el campo.', "ppom" )
 				),
 				
 				'class' => array (
@@ -94,8 +94,8 @@ class NM_Instagram_wooproduct extends PPOM_Inputs{
 				),
 				'width' => array (
 						'type' => 'text',
-						'title' => __ ( 'Width', "ppom" ),
-						'desc' => __ ( 'Type field width in % e.g: 50%', "ppom" )
+						'title' => __ ( 'Anchura', "ppom" ),
+						'desc' => __ ( 'Tamaño en la pantalla siendo 12 el maximo y 2 el minimo.', "ppom" )
 				),
 				
 				'button_label_import' => array (

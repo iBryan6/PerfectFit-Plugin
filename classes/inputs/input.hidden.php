@@ -37,13 +37,13 @@ class NM_Hidden_wooproduct extends PPOM_Inputs{
 
 			'title' => array (
 					'type' => 'text',
-					'title' => __ ( 'Title', 'ppom' ),
+					'title' => __ ( 'Titulo', 'ppom' ),
 					'desc' => __ ( 'Label will show in cart', 'ppom' ) 
 			),
 			'data_name' => array (
 					'type' => 'text',
-					'title' => __ ( 'Data name', "ppom" ),
-					'desc' => __ ( 'REQUIRED: The identification name of this field, that you can insert into body email configuration. Note:Use only lowercase characters and underscores.', "ppom" )
+					'title' => __ ( 'Nombre en la Base de Datos', "ppom" ),
+					'desc' => __ ( 'REQUERIDO: Es el nombre que tendra como identificador en la tabla de grupos.', "ppom" )
 			),
 			'field_value' => array (
 					'type' => 'text',
@@ -52,15 +52,15 @@ class NM_Hidden_wooproduct extends PPOM_Inputs{
 			),
 			'visibility' => array (
 					'type' => 'select',
-					'title' => __ ( 'Visibility', 'ppom' ),
-					'desc' => __ ( 'Set field visibility based on user.', 'ppom'),
+					'title' => __ ( 'Visibilidad', 'ppom' ),
+					'desc' => __ ( 'Establecer la visibilidad de campo en función del usuario.', 'ppom'),
 					'options'	=> ppom_field_visibility_options(),
 					'default'	=> 'everyone',
 			),
 			'visibility_role' => array (
 					'type' => 'text',
-					'title' => __ ( 'User Roles', 'ppom' ),
-					'desc' => __ ( 'Role separated by comma.', 'ppom'),
+					'title' => __ ( 'Roles del usuario', 'ppom' ),
+					'desc' => __ ( 'Rol separado por coma.', 'ppom'),
 					'hidden' => true,
 			),
 		);

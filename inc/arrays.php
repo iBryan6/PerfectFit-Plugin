@@ -32,10 +32,10 @@ function ppom_get_input_cols() {
 
 function ppom_field_visibility_options() {
 	
-	$visibility_options = array('everyone'	=> __('Everyone'),
-								'guests'	=> __('Only Guests'),
-								'members'	=> __('Only Members'),
-								'roles'		=> __('By Role')
+	$visibility_options = array('everyone'	=> __('Todos'),
+								'guests'	=> __('Solo invitados'),
+								'members'	=> __('Solo miembros'),
+								'roles'		=> __('Por Rol')
 								);
 								
 	return apply_filters('ppom_field_visibility_options', $visibility_options);

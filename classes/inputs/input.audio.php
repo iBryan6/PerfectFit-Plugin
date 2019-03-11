@@ -33,22 +33,22 @@ class NM_Audio_wooproduct extends PPOM_Inputs{
 		return array (
 			'title' => array (
 					'type' => 'text',
-					'title' => __ ( 'Title', "ppom" ),
+					'title' => __ ( 'Titulo', "ppom" ),
 					'desc' => __ ( 'It will be shown as field label', "ppom" ) 
 			),
 			'data_name' => array (
 					'type' => 'text',
-					'title' => __ ( 'Data name', "ppom" ),
-					'desc' => __ ( 'REQUIRED: The identification name of this field, that you can insert into body email configuration. Note:Use only lowercase characters and underscores.', "ppom" ) 
+					'title' => __ ( 'Nombre en la Base de Datos', "ppom" ),
+					'desc' => __ ( 'REQUERIDO: Es el nombre que tendra como identificador en la tabla de grupos.', "ppom" ) 
 			),
 			'description' => array (
 					'type' => 'textarea',
-					'title' => __ ( 'Description', "ppom" ),
-					'desc' => __ ( 'Small description, it will be display near name title.', "ppom" ) 
+					'title' => __ ( 'Descripción', "ppom" ),
+					'desc' => __ ( 'Pequeña descripción, se mostrará cerca del nombre del título.', "ppom" ) 
 			),
 			'error_message' => array (
 					'type' => 'text',
-					'title' => __ ( 'Error message', "ppom" ),
+					'title' => __ ( 'Mensaje de error', "ppom" ),
 					'desc' => __ ( 'Insert the error message for validation.', "ppom" ) 
 			),	
 			'class' => array (
@@ -58,38 +58,38 @@ class NM_Audio_wooproduct extends PPOM_Inputs{
 			),
 			'width' => array (
 					'type' => 'select',
-					'title' => __ ( 'Width', 'ppom' ),
-					'desc' => __ ( 'Select width column.', 'ppom'),
+					'title' => __ ( 'Anchura', 'ppom' ),
+					'desc' => __ ( 'Tamaño en la pantalla siendo 12 el maximo y 2 el minimo.', 'ppom'),
 					'options'	=> ppom_get_input_cols(),
 					'default'	=> 12,
 			),
 			'visibility' => array (
 					'type' => 'select',
-					'title' => __ ( 'Visibility', 'ppom' ),
-					'desc' => __ ( 'Set field visibility based on user.', 'ppom'),
+					'title' => __ ( 'Visibilidad', 'ppom' ),
+					'desc' => __ ( 'Establecer la visibilidad de campo en función del usuario.', 'ppom'),
 					'options'	=> ppom_field_visibility_options(),
 					'default'	=> 'everyone',
 			),
 			'visibility_role' => array (
 					'type' => 'text',
-					'title' => __ ( 'User Roles', 'ppom' ),
-					'desc' => __ ( 'Role separated by comma.', 'ppom'),
+					'title' => __ ( 'Roles del usuario', 'ppom' ),
+					'desc' => __ ( 'Rol separado por coma.', 'ppom'),
 					'hidden' => true,
 			),
 			'audio' => array (
 					'type' => 'pre-audios',
 					'title' => __ ( 'Select Audio/Video', "ppom" ),
 					'desc' => __ ( 'Select audio or video from media library', "ppom" )
-			),
+			),/* 
 			'desc_tooltip' => array (
 					'type' => 'checkbox',
 					'title' => __ ( 'Show tooltip (PRO)', 'ppom' ),
-					'desc' => __ ( 'Show Description in Tooltip with Help Icon', 'ppom' )
-			),
+					'desc' => __ ( 'Show Descripción in Tooltip with Help Icon', 'ppom' )
+			), */
 			'required' => array (
 					'type' => 'checkbox',
-					'title' => __ ( 'Required', "ppom" ),
-					'desc' => __ ( 'Select this if it must be required.', "ppom" ),
+					'title' => __ ( 'Necesario', "ppom" ),
+					'desc' => __ ( 'Seleccione esto si es necesario llenar el campo.', "ppom" ),
 			),
 			'multiple_allowed' => array (
 					'type' => 'checkbox',

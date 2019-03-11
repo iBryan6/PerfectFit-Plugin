@@ -38,7 +38,7 @@ class NM_Text_wooproduct extends PPOM_Inputs{
 				),
 				'data_name' => array (
 						'type' => 'text',
-						'title' => __ ( 'Nombre de la Tabla en la Base de Datos.', 'ppom' ),
+						'title' => __ ( 'Nombre en la Base de Datos', 'ppom' ),
 						'desc' => __ ( 'REQUERIDO: el nombre de identificación de este campo, que puede insertar en la configuración de correo electrónico del cuerpo. Nota: Use solo caracteres en minúscula y guiones bajos.', 'ppom' ) 
 				),
 				'placeholder' => array (
@@ -77,37 +77,37 @@ class NM_Text_wooproduct extends PPOM_Inputs{
 						'type' => 'text',
 						'title' => __ ( 'Clase extra HTML', 'ppom' ),
 						'desc' => __ ( 'Inserte una(s) clase(s) adicional (separar por coma) para una mayor personalización.', 'ppom' ) 
-				),
+				),/* BRYAN HIDDEN MASKING
 				'input_mask' => array (
 						'type' => 'text',
 						'title' => __ ( 'Input Masking', 'ppom' ),
 						'desc' => __ ( 'Click options to see all Masking Options', 'ppom' ),
 						'link' => __ ( '<a href="https://github.com/RobinHerbots/Inputmask" target="_blank">Options</a>', 'ppom' ) 
-				),
+				), */
 				'width' => array (
 						'type' => 'select',
-						'title' => __ ( 'Width', 'ppom' ),
-						'desc' => __ ( 'Type field width in % e.g: 50%', 'ppom'),
+						'title' => __ ( 'Anchura', 'ppom' ),
+						'desc' => __ ( 'Tamaño en la pantalla siendo 12 el maximo y 2 el minimo.', 'ppom'),
 						'options'	=> ppom_get_input_cols(),
 						'default'	=> 12,
 				),
 				'visibility' => array (
 						'type' => 'select',
-						'title' => __ ( 'Visibility', 'ppom' ),
-						'desc' => __ ( 'Set field visibility based on user.', 'ppom'),
+						'title' => __ ( 'Visibilidad', 'ppom' ),
+						'desc' => __ ( 'Establecer la visibilidad de campo en función del usuario.', 'ppom'),
 						'options'	=> ppom_field_visibility_options(),
 						'default'	=> 'everyone',
 				),
 				'visibility_role' => array (
 						'type' => 'text',
-						'title' => __ ( 'User Roles', 'ppom' ),
-						'desc' => __ ( 'Role separated by comma.', 'ppom'),
+						'title' => __ ( 'Roles del usuario', 'ppom' ),
+						'desc' => __ ( 'Rol separado por coma.', 'ppom'),
 						'hidden' => true,
 				),
 				'required' => array (
 						'type' => 'checkbox',
-						'title' => __ ( 'Required', 'ppom' ),
-						'desc' => __ ( 'Select this if it must be required.', 'ppom' ) 
+						'title' => __ ( 'Necesario', 'ppom' ),
+						'desc' => __ ( 'Seleccione esto si es necesario llenar el campo.', 'ppom' ) 
 				),
 				'logic' => array (
 						'type' => 'checkbox',
