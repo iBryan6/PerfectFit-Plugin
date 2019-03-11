@@ -54,7 +54,7 @@ class NM_Quantities_wooproduct extends PPOM_Inputs{
 			'error_message' => array (
 					'type' => 'text',
 					'title' => __ ( 'Mensaje de error', 'ppom' ),
-					'desc' => __ ( 'Insert the error message for validation.', "ppom" ) 
+					'desc' => __ ( 'Inserte el mensaje de error para la validación.', "ppom" ) 
 			),
 			'options' => array (
 					'type' => 'paired-quantity',
@@ -70,8 +70,8 @@ class NM_Quantities_wooproduct extends PPOM_Inputs{
 
 			'class' => array (
 					'type' => 'text',
-					'title' => __ ( 'Class', 'ppom' ),
-					'desc' => __ ( 'Insert an additional class(es) (separateb by comma) for more personalization.', 'ppom' ) 
+					'title' => __ ( 'Clase extra HTML', 'ppom' ),
+					'desc' => __ ( 'Inserte una(s) clase(s) adicional (separar por coma) para una mayor personalización.', 'ppom' ) 
 			),
 			'width' => array (
 					'type' => 'select',

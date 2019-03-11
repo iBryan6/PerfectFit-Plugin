@@ -49,7 +49,7 @@ class NM_Color_wooproduct extends PPOM_Inputs{
 			'error_message' => array (
 					'type' => 'text',
 					'title' => __ ( 'Mensaje de error', 'ppom' ),
-					'desc' => __ ( 'Insert the error message for validation.', 'ppom' ) 
+					'desc' => __ ( 'Inserte el mensaje de error para la validación.', 'ppom' ) 
 			),		
 			'default_color' => array (
 					'type' => 'text',

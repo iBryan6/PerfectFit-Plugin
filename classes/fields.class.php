@@ -137,18 +137,18 @@ if( ! defined('ABSPATH') ) die('Not Allowed');
 				
 				/* BRYAN HIDDEN CONDITION */
 				// if ($fields_type != 'hidden') {
-				// $html .= '<label for="tab2" id="tab2" class="ppom-tabs-label ppom-condition-tab-js">'.esc_html__( 'Conditions', 'ppom' ).'</label>';
+				// $html .= '<label for="tab2" id="tab2" class="ppom-tabs-label ppom-condition-tab-js">'.esc_html__( 'Condiciones', 'ppom' ).'</label>';
 				// }
 				
 				if ($fields_type == 'select' || $fields_type == 'radio' || $fields_type == 'checkbox' || $fields_type == 'cropper' || $fields_type == 'quantities' || $fields_type == 'pricematrix' || $fields_type == 'palettes' || $fields_type == 'fixedprice' || $fields_type == 'bulkquantity'){
-				$html .= '<label for="tab3" id="tab3" class="ppom-tabs-label">'.esc_html__( 'Add Options', 'ppom' ).'</label>';
+				$html .= '<label for="tab3" id="tab3" class="ppom-tabs-label">'.esc_html__( 'Agregar Opciones', 'ppom' ).'</label>';
 				}else if($fields_type == 'image' || $fields_type == 'imageselect'){
-				$html .= '<label for="tab3" id="tab3" class="ppom-tabs-label">'.esc_html__( 'Add Images', 'ppom' ).'</label>';
+				$html .= '<label for="tab3" id="tab3" class="ppom-tabs-label">'.esc_html__( 'Agregar Imagenes', 'ppom' ).'</label>';
 				}else if($fields_type == 'audio'){
-				$html .= '<label for="tab3" id="tab3" class="ppom-tabs-label">'.esc_html__( 'Add Audio/Video ', 'ppom' ).'</label>';
+				$html .= '<label for="tab3" id="tab3" class="ppom-tabs-label">'.esc_html__( 'Agregar Audio/Video ', 'ppom' ).'</label>';
 				}else if ($fields_type == 'fonts') {
-				$html .= '<label for="tab4" id="tab4" class="ppom-tabs-label">'.esc_html__( 'Fonts Family ', 'ppom' ).'</label>';	
-				$html .= '<label for="tab5" id="tab5" class="ppom-tabs-label">'.esc_html__( 'Custom Fonts ', 'ppom' ).'</label>';	
+				$html .= '<label for="tab4" id="tab4" class="ppom-tabs-label">'.esc_html__( 'Familia de fonts', 'ppom' ).'</label>';	
+				$html .= '<label for="tab5" id="tab5" class="ppom-tabs-label">'.esc_html__( 'Fonts personalizados', 'ppom' ).'</label>';	
 				}
 			
 			$html .= '</div>';

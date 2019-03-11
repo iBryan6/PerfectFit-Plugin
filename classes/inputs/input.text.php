@@ -43,7 +43,7 @@ class NM_Text_wooproduct extends PPOM_Inputs{
 				),
 				'placeholder' => array (
 						'type' => 'text',
-						'title' => __ ( 'Marcador de posición', 'ppom' ),
+						'title' => __ ( 'Placeholder', 'ppom' ),
 						'desc' => __ ( 'Opcional.', 'ppom' ) 
 				),
 				'description' => array (

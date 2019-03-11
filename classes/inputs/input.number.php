@@ -21,7 +21,7 @@ class NM_Number_wooproduct extends PPOM_Inputs{
 		
 		$this -> plugin_meta = ppom_get_plugin_meta();
 		
-		$this -> title 		= __ ( 'Number Input', "ppom" );
+		$this -> title 		= __ ( 'Campo de número', "ppom" );
 		$this -> desc		= __ ( 'regular number input', "ppom" );
 		$this -> icon		= __ ( '<i class="fa fa-hashtag" aria-hidden="true"></i>', 'ppom' );
 		$this -> settings	= self::get_settings();
@@ -44,7 +44,7 @@ class NM_Number_wooproduct extends PPOM_Inputs{
 			'placeholder' => array (
 					'type' => 'text',
 					'title' => __ ( 'Placeholder', 'ppom' ),
-					'desc' => __ ( 'Optionally placeholder.', 'ppom' ) 
+					'desc' => __ ( 'Opcional.', 'ppom' ) 
 			),
 			'description' => array (
 					'type' => 'textarea',
@@ -54,32 +54,32 @@ class NM_Number_wooproduct extends PPOM_Inputs{
 			'error_message' => array (
 					'type' => 'text',
 					'title' => __ ( 'Mensaje de error', "ppom" ),
-					'desc' => __ ( 'Insert the error message for validation.', "ppom" ) 
+					'desc' => __ ( 'Inserte el mensaje de error para la validación.', "ppom" ) 
 			),
 			'max' => array (
 					'type' => 'text',
-					'title' => __ ( 'Max. values', "ppom" ),
-					'desc' => __ ( 'Max. values allowed, leave blank for default', "ppom" )
+					'title' => __ ( 'Valores maximos', "ppom" ),
+					'desc' => __ ( 'Valores maximos permitidos, dejar en blanco por defecto.', "ppom" )
 			),
 			'min' => array (
 					'type' => 'text',
-					'title' => __ ( 'Min. values', "ppom" ),
-					'desc' => __ ( 'Min. values allowed, leave blank for default', "ppom" )
+					'title' => __ ( 'Valores minimos', "ppom" ),
+					'desc' => __ ( 'Valores minimos permitidos, dejar en blanco por defecto.', "ppom" )
 			),
 			'step' => array (
 					'type' => 'text',
-					'title' => __ ( 'Steps', "ppom" ),
-					'desc' => __ ( 'specified legal number intervals', "ppom" )
+					'title' => __ ( 'Pasos', "ppom" ),
+					'desc' => __ ( 'Intervalos de números legales especificados', "ppom" )
 			),
 			'default_value' => array (
 					'type' => 'text',
-					'title' => __ ( 'Set default value', "ppom" ),
+					'title' => __ ( 'Establecer el valor predeterminado', "ppom" ),
 					'desc' => __ ( 'Pre-defined value for text input', "ppom" )
 			),
 			'class' => array (
 					'type' => 'text',
-					'title' => __ ( 'Class', "ppom" ),
-					'desc' => __ ( 'Insert an additional class(es) (separateb by comma) for more personalization.', "ppom" ) 
+					'title' => __ ( 'Clase extra HTML', "ppom" ),
+					'desc' => __ ( 'Inserte una(s) clase(s) adicional (separar por coma) para una mayor personalización.', "ppom" ) 
 			),
 			'width' => array (
 					'type' => 'select',

@@ -21,7 +21,7 @@ class NM_Select_wooproduct extends PPOM_Inputs{
 		
 		$this -> plugin_meta = ppom_get_plugin_meta();
 		
-		$this -> title 		= __ ( 'Select Input', 'ppom' );
+		$this -> title 		= __ ( 'Campo de selección', 'ppom' );
 		$this -> desc		= __ ( 'regular select input', 'ppom' );
 		$this -> icon		= __ ( '<i class="fa fa-check" aria-hidden="true"></i>', 'ppom' );
 		$this -> settings	= self::get_settings();
@@ -49,7 +49,7 @@ class NM_Select_wooproduct extends PPOM_Inputs{
 			'error_message' => array (
 					'type' => 'text',
 					'title' => __ ( 'Mensaje de error', 'ppom' ),
-					'desc' => __ ( 'Insert the error message for validation.', 'ppom' ) 
+					'desc' => __ ( 'Inserte el mensaje de error para la validación.', 'ppom' ) 
 			),
 			'options' => array (
 					'type' => 'paired',
@@ -69,8 +69,8 @@ class NM_Select_wooproduct extends PPOM_Inputs{
 			),
 			'class' => array (
 					'type' => 'text',
-					'title' => __ ( 'Class', 'ppom' ),
-					'desc' => __ ( 'Insert an additional class(es) (separateb by comma) for more personalization.', 'ppom' ) 
+					'title' => __ ( 'Clase extra HTML', 'ppom' ),
+					'desc' => __ ( 'Inserte una(s) clase(s) adicional (separar por coma) para una mayor personalización.', 'ppom' ) 
 			),
 			'width' => array (
 					'type' => 'select',
