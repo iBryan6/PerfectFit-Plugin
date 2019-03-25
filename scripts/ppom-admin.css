@@ -325,7 +325,6 @@ ul.ppom-options-container li {
 .ppom-heading-style{
     border-bottom: 2px solid #E04438;
     padding-bottom: 9px;
-    font-family: roboto;
     /*font-size: 30px;*/
 }
 .CodeMirror{
@@ -431,7 +430,6 @@ ul.ppom-options-container li {
 .ppom-nm-plugins-wrapper .ppom-nm-card-block h3{
     border-bottom: 2px solid #0efc2b7a;
     padding-bottom: 3px;
-    font-family: roboto;
     font-weight: 600;
     font-size: 19px;
 }

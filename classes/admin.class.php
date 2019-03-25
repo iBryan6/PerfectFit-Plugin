@@ -84,14 +84,13 @@ class NM_PersonalizedProduct_Admin extends NM_PersonalizedProduct {
 	 * CALLBACKS
 	*/
 	function product_meta() {
-		echo '<div class="ppom-admin-wrap woocommerce">';
+		echo '<div class="wrap">';
 		
 		$action  = (isset($_REQUEST ['action']) ? $_REQUEST ['action'] : '');
 		$do_meta = (isset($_REQUEST ['do_meta']) ? $_REQUEST ['do_meta'] : '');
 
 		if ($action != 'new' && $do_meta != 'edit' && $do_meta != 'clone') {
-			echo '<h1 class="ppom-heading-style">' . __ ( 'DASHBOARD', "ppom" ) . '</h1>';
-			echo '<p>' . __ ( 'Aqui puedes crear diferentes grupos.', "ppom" ) . '</p>';
+			echo '<h1 class="wp-heading-inline">' . __ ( 'DASHBOARD DE GRUPOS', "ppom" ) . '</h1>';
 		}
 		
 		if ((isset ( $_REQUEST ['productmeta_id'] ) && $_REQUEST ['do_meta'] == 'edit') || $action == 'new') {
@@ -101,10 +100,8 @@ class NM_PersonalizedProduct_Admin extends NM_PersonalizedProduct {
 		}else{
 			$url_add = add_query_arg(array('action' => 'new'));
 			
-			echo '<div class="text-center">';
-				echo '<a class="btn btn-success btn-lg btn-block" href="'.esc_url($url_add).'"><span class="dashicons dashicons-plus"></span> '. __ ( 'Nuevo Grupo', "ppom" ) . '</a>';
-			echo '</div>';
-			echo '<br>';
+			echo '<a class="page-title-action" href="'.esc_url($url_add).'"> '. __ ( 'Nuevo Grupo', "ppom" ) . '</a>';
+			echo '<hr class="wp-header-end">';
 
 			do_action('ppom_pdf_setting_action');			
 		}

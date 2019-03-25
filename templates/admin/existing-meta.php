@@ -31,19 +31,14 @@ $all_forms = PPOM()->get_product_meta_all();
     <div class="clear"></div>
 </div>
 
-<div class="wrapper">
-    <h2 class="ppom-heading-style"><?php _e('LISTA DE GRUPOS', 'ppom'); ?></h2>
-</div>
 
-
-<div class="ppom-existing-meta-wrapper">
-
+<div class="wrap">
     <form method="post" action="admin-post.php" enctype="multipart/form-data">
         <input type="hidden" name="action" value="ppom_export_meta" />
 
         <div class="ppom-product-table-header">
 
-            <span class="ppom-product-count-span"><?php _e('Selecionando', 'ppom'); ?> <span id="selected_products_count">0</span><?php _e(' Grupo(s)', 'ppom'); ?></span><br><br>
+            <span><?php _e('Selecionando', 'ppom'); ?> <span id="selected_products_count">0</span><?php _e(' Grupo(s)', 'ppom'); ?></span><br><br>
             <a class="btn btn-danger" id="ppom_delete_selected_products_btn"><?php _e('Borrar', 'ppom') ?></a><br><br>
             <span class="clear"></span>
         </div>
