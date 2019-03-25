@@ -58,7 +58,7 @@ class PPOM_Rest {
     
     public static function add_settings_tab( $settings_tabs ) {
     	
-        $settings_tabs['ppom_rest'] = __( 'PPOM API', 'ppom' );
+        //$settings_tabs['ppom_rest'] = __( 'PPOM API', 'ppom' );
         return $settings_tabs;
     }
     
