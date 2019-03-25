@@ -119,7 +119,7 @@ if( ! defined('ABSPATH' ) ){ exit; }
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col-md-12 col-sm-12">
 						<div class="form-group">
 							<label><?php _e('CSS (Opcional)', "ppom"); ?>
@@ -128,7 +128,7 @@ if( ! defined('ABSPATH' ) ){ exit; }
 							<textarea id="ppom-css-editor" class="form-control" name="productmeta_style"><?php echo stripslashes($productmeta_style)?></textarea>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 
 

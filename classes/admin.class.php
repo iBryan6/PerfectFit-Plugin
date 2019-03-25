@@ -171,7 +171,7 @@ class NM_PersonalizedProduct_Admin extends NM_PersonalizedProduct {
 			}
 		}
 		
-		$response = array("message"=>"PPOM updated for {$ppom_udpated} Products", 'status'=>'success');
+		$response = array("message"=>"Se actualizo para {$ppom_udpated} Producto(s)", 'status'=>'success');
 		
 		wp_send_json( $response );
 	}
