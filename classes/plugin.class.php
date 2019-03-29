@@ -658,7 +658,7 @@ function get_all_inputs()
     $all_inputs = array(
 
         'text'         => $nm_inputs->get_input('text'),
-        //'textarea'     => $nm_inputs->get_input('textarea'),
+        'textarea'     => $nm_inputs->get_input('textarea'),
         'select'     => $nm_inputs->get_input('select'),
         'radio'     => $nm_inputs->get_input('radio'),
         //'checkbox'     => $nm_inputs->get_input('checkbox'),
@@ -667,7 +667,7 @@ function get_all_inputs()
         'number'     => $nm_inputs->get_input('number'),
         //'hidden'     => $nm_inputs->get_input('hidden'),
         'image'     => $nm_inputs->get_input('image'),
-        //'color'     => $nm_inputs->get_input('color'),
+        'color'     => $nm_inputs->get_input('color'),
         //'palettes'     => $nm_inputs->get_input('palettes'),
         'section'     => $nm_inputs->get_input('section'),
         'measure'     => $nm_inputs->get_input('measure'),
