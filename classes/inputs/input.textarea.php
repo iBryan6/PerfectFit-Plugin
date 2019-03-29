@@ -55,11 +55,11 @@ class NM_Textarea_wooproduct extends PPOM_Inputs{
 					'desc' => __ ( 'Inserte el mensaje de error para la validación.', "ppom" ) 
 			),
 			
-			'default_value' => array (
-					'type' => 'text',
-					'title' => __ ( 'Post ID', "ppom" ),
-					'desc' => __ ( 'It will pull content from post. e.g: 22', "ppom" )
-			),		
+			// 'default_value' => array (
+			// 		'type' => 'text',
+			// 		'title' => __ ( 'Post ID', "ppom" ),
+			// 		'desc' => __ ( 'It will pull content from post. e.g: 22', "ppom" )
+			// ),		
 			/*'cols' => array (
 					'type' => 'text',
 					'title' => __ ( 'Columns', "ppom" ),
@@ -67,13 +67,13 @@ class NM_Textarea_wooproduct extends PPOM_Inputs{
 			),*/
 			'rows' => array (
 					'type' => 'text',
-					'title' => __ ( 'Rows', "ppom" ),
-					'desc' => __ ( 'e.g: 3', "ppom" )
+					'title' => __ ( 'Columnas', "ppom" ),
+					'desc' => __ ( 'Ejemplo: 3', "ppom" )
 			),
 			'max_length' => array (
 					'type' => 'text',
-					'title' => __ ( 'Max. Length', "ppom" ),
-					'desc' => __ ( 'Max. characters allowed, leave blank for default', "ppom" )
+					'title' => __ ( 'Max. Longitud', "ppom" ),
+					'desc' => __ ( 'Max. caracteres permitidos, dejar en blanco por defecto', "ppom" )
 			),
 			'class' => array (
 					'type' => 'text',
@@ -87,19 +87,21 @@ class NM_Textarea_wooproduct extends PPOM_Inputs{
 					'options'	=> ppom_get_input_cols(),
 					'default'	=> 12,
 			),
-			'visibility' => array (
-					'type' => 'select',
-					'title' => __ ( 'Visibilidad', 'ppom' ),
-					'desc' => __ ( 'Establecer la visibilidad de campo en función del usuario.', 'ppom'),
-					'options'	=> ppom_field_visibility_options(),
-					'default'	=> 'everyone',
-			),
-			'visibility_role' => array (
-					'type' => 'text',
-					'title' => __ ( 'Roles del usuario', 'ppom' ),
-					'desc' => __ ( 'Rol separado por coma.', 'ppom'),
-					'hidden' => true,
-			),/* 
+			// BRYAN VISIBILITY TEXTAREA
+			// 'visibility' => array (
+			// 		'type' => 'select',
+			// 		'title' => __ ( 'Visibilidad', 'ppom' ),
+			// 		'desc' => __ ( 'Establecer la visibilidad de campo en función del usuario.', 'ppom'),
+			// 		'options'	=> ppom_field_visibility_options(),
+			// 		'default'	=> 'everyone',
+			// ),
+			// 'visibility_role' => array (
+			// 		'type' => 'text',
+			// 		'title' => __ ( 'Roles del usuario', 'ppom' ),
+			// 		'desc' => __ ( 'Rol separado por coma.', 'ppom'),
+			// 		'hidden' => true,
+			// ),
+			/* 
 			'desc_tooltip' => array (
 					'type' => 'checkbox',
 					'title' => __ ( 'Show tooltip (PRO)', 'ppom' ),
@@ -110,12 +112,12 @@ class NM_Textarea_wooproduct extends PPOM_Inputs{
 					'title' => __ ( 'Necesario', "ppom" ),
 					'desc' => __ ( 'Seleccione esto si es necesario llenar el campo.', "ppom" ) 
 			),
-			'rich_editor' => array (
-					'type' => 'checkbox',
-					'title' => __ ( 'Rich Editor', "ppom" ),
-					'desc' => __ ( 'Enable WordPress rich editor.', "ppom" ),
-					'link' => __ ( '<a target="_blank" href="https://codex.wordpress.org/Function_Reference/wp_editor">Editor</a>', 'ppom' ) 
-			),
+			// 'rich_editor' => array (
+			// 		'type' => 'checkbox',
+			// 		'title' => __ ( 'Rich Editor', "ppom" ),
+			// 		'desc' => __ ( 'Enable WordPress rich editor.', "ppom" ),
+			// 		'link' => __ ( '<a target="_blank" href="https://codex.wordpress.org/Function_Reference/wp_editor">Editor</a>', 'ppom' ) 
+			// ),
 			'logic' => array (
 					'type' => 'checkbox',
 					'title' => __ ( 'Enable Conditions', "ppom" ),
