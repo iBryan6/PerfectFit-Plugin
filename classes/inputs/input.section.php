@@ -60,19 +60,21 @@ class NM_Section_wooproduct extends PPOM_Inputs{
 					'options'	=> ppom_get_input_cols(),
 					'default'	=> 12,
 			),
-			'visibility' => array (
-					'type' => 'select',
-					'title' => __ ( 'Visibilidad', 'ppom' ),
-					'desc' => __ ( 'Establecer la visibilidad de campo en función del usuario.', 'ppom'),
-					'options'	=> ppom_field_visibility_options(),
-					'default'	=> 'everyone',
-			),
-			'visibility_role' => array (
-					'type' => 'text',
-					'title' => __ ( 'Roles del usuario', 'ppom' ),
-					'desc' => __ ( 'Rol separado por coma.', 'ppom'),
-					'hidden' => true,
-			),/* 
+			// BRYAN VISIBILIDAD SECTION
+			// 'visibility' => array (
+			// 		'type' => 'select',
+			// 		'title' => __ ( 'Visibilidad', 'ppom' ),
+			// 		'desc' => __ ( 'Establecer la visibilidad de campo en función del usuario.', 'ppom'),
+			// 		'options'	=> ppom_field_visibility_options(),
+			// 		'default'	=> 'everyone',
+			// ),
+			// 'visibility_role' => array (
+			// 		'type' => 'text',
+			// 		'title' => __ ( 'Roles del usuario', 'ppom' ),
+			// 		'desc' => __ ( 'Rol separado por coma.', 'ppom'),
+			// 		'hidden' => true,
+			// ),
+			/* 
 			'desc_tooltip' => array (
 					'type' => 'checkbox',
 					'title' => __ ( 'Show tooltip (PRO)', 'ppom' ),

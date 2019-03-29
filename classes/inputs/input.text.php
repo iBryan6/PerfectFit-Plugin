@@ -78,11 +78,12 @@ class NM_Text_wooproduct extends PPOM_Inputs{
 						'title' => __ ( 'Clase extra HTML', 'ppom' ),
 						'desc' => __ ( 'Inserte una(s) clase(s) adicional (separar por coma) para una mayor personalización.', 'ppom' ) 
 				),
-				'input_mask' => array (
-						'type' => 'text',
-						'title' => __ ( 'Masking', 'ppom' ),
-						'desc' => __ ( 'No usar', 'ppom' )
-				),
+				// BRYAN MASKING TEXT
+				// 'input_mask' => array (
+				// 		'type' => 'text',
+				// 		'title' => __ ( 'Masking', 'ppom' ),
+				// 		'desc' => __ ( 'No usar', 'ppom' )
+				// ),
 				'width' => array (
 						'type' => 'select',
 						'title' => __ ( 'Anchura', 'ppom' ),
@@ -90,19 +91,20 @@ class NM_Text_wooproduct extends PPOM_Inputs{
 						'options'	=> ppom_get_input_cols(),
 						'default'	=> 12,
 				),
-				'visibility' => array (
-						'type' => 'select',
-						'title' => __ ( 'Visibilidad', 'ppom' ),
-						'desc' => __ ( 'Establecer la visibilidad de campo en función del usuario.', 'ppom'),
-						'options'	=> ppom_field_visibility_options(),
-						'default'	=> 'everyone',
-				),
-				'visibility_role' => array (
-						'type' => 'text',
-						'title' => __ ( 'Roles del usuario', 'ppom' ),
-						'desc' => __ ( 'Rol separado por coma.', 'ppom'),
-						'hidden' => true,
-				),
+				// BRYAN VISIBILIDAD TEXT
+				// 'visibility' => array (
+				// 		'type' => 'select',
+				// 		'title' => __ ( 'Visibilidad', 'ppom' ),
+				// 		'desc' => __ ( 'Establecer la visibilidad de campo en función del usuario.', 'ppom'),
+				// 		'options'	=> ppom_field_visibility_options(),
+				// 		'default'	=> 'everyone',
+				// ),
+				// 'visibility_role' => array (
+				// 		'type' => 'text',
+				// 		'title' => __ ( 'Roles del usuario', 'ppom' ),
+				// 		'desc' => __ ( 'Rol separado por coma.', 'ppom'),
+				// 		'hidden' => true,
+				// ),
 				'required' => array (
 						'type' => 'checkbox',
 						'title' => __ ( 'Necesario', 'ppom' ),

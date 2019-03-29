@@ -76,19 +76,21 @@ class NM_Image_wooproduct extends PPOM_Inputs
 				'title' => __('Imagen seleccionada', 'ppom'),
 				'desc' => __('Imagen seleccionada en la pestaña (Agregar Imágenes) si ya lo desea seleccionado.', 'ppom')
 			),
-			'visibility' => array(
-				'type' => 'select',
-				'title' => __('Visibilidad', 'ppom'),
-				'desc' => __('Establecer la visibilidad de campo en función del usuario.', 'ppom'),
-				'options'	=> ppom_field_visibility_options(),
-				'default'	=> 'everyone',
-			),
-			'visibility_role' => array(
-				'type' => 'text',
-				'title' => __('Roles del usuario', 'ppom'),
-				'desc' => __('Rol separado por coma.', 'ppom'),
-				'hidden' => true,
-			), /* 
+			// BRYAN VISIBILITY IMAGE
+			// 'visibility' => array(
+			// 	'type' => 'select',
+			// 	'title' => __('Visibilidad', 'ppom'),
+			// 	'desc' => __('Establecer la visibilidad de campo en función del usuario.', 'ppom'),
+			// 	'options'	=> ppom_field_visibility_options(),
+			// 	'default'	=> 'everyone',
+			// ),
+			// 'visibility_role' => array(
+			// 	'type' => 'text',
+			// 	'title' => __('Roles del usuario', 'ppom'),
+			// 	'desc' => __('Rol separado por coma.', 'ppom'),
+			// 	'hidden' => true,
+			// ), 
+			/* 
 			'desc_tooltip' => array (
 					'type' => 'checkbox',
 					'title' => __ ( 'Show tooltip (PRO)', 'ppom' ),
