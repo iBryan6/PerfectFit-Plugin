@@ -55,7 +55,7 @@ $all_forms = PPOM()->get_product_meta_all();
                         <th><?php _e('ID', "ppom") ?></th>
                         <th><?php _e('Nombre de Grupo', "ppom") ?></th>
                         <th><?php _e('Categorias', "ppom") ?></th>
-                        <th><?php _e('Selecionar Productos', "ppom") ?></th>
+                        <th><?php _e('Seleccionar Productos', "ppom") ?></th>
                         <th><?php _e('Opciones', "ppom") ?></th>
                     </tr>
                 </thead>

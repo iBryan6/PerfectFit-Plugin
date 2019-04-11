@@ -115,7 +115,7 @@ echo '<p><a class="page-title-action" href="' . $url_cancel . '">' . __('&laquo;
                                 <span class="ppom-helper-icon" data-ppom-tooltip="ppom_tooltip" title="<?php _e('Contrala las opciones de como se comportara el precio.', "ppom") ?>"><i class="dashicons dashicons-editor-help"></i></span>
                             </label>
                             <select name="dynamic_price_hide" class="form-control">
-                                <option value="no"><?php _e("Selecionar Opcion", "ppom"); ?></option>
+                                <option value="no"><?php _e("Seleccionar Opcion", "ppom"); ?></option>
                                 <option value="hide" <?php selected($dynamic_price_hide, 'hide') ?>><?php _e("No mostrar Precio", "ppom"); ?></option>
                                 <option value="option_sum" <?php selected($dynamic_price_hide, 'option_sum') ?>><?php _e("Solo Mostrar el Precio final", "ppom"); ?></option>
                                 <option value="all_option" <?php selected($dynamic_price_hide, 'all_option') ?>><?php _e("Mostrar el Precio de cada opcion", "ppom"); ?></option>

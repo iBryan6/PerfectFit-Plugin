@@ -1,9 +1,4 @@
 <?php
-/*
- * Followig class handling all inputs control and their 
- * dependencies. Do not make changes in code
- * Create on: 9 November, 2013 
- */
 
 class PPOM_Inputs{
 

@@ -1,7 +1,4 @@
 <?php
- /*
- * The base plugin class.
- */
 
 
 class NM_PersonalizedProduct

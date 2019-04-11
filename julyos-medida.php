@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Perfecto Estilo
+Plugin Name: Julyos a Medida
 Description: Plugin a medida para la Empresa JULYO'S.
 Version: 16.7
 Author: Bryan Argandoña
@@ -15,7 +15,7 @@ if( ! defined('ABSPATH' ) ){
 define('PPOM_PATH', untrailingslashit(plugin_dir_path( __FILE__ )) );
 define('PPOM_URL', untrailingslashit(plugin_dir_url( __FILE__ )) );
 define('PPOM_WP_PLUGIN_DIR', untrailingslashit( plugin_dir_path( __DIR__ ) ));
-define('PPOM_VERSION', 16.7);
+define('PPOM_VERSION', 20.1);
 define('PPOM_DB_VERSION', 16.7);
 define("PPOM_PRODUCT_META_KEY", '_product_meta_id');
 define('PPOM_TABLE_META', 'nm_personalized');

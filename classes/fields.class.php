@@ -1,7 +1,4 @@
 <?php
-/**
- * PPOM Fields Manager Class
-**/
 
 /* 
 **========== Direct access not allowed =========== 

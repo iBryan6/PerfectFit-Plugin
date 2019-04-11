@@ -1,9 +1,4 @@
 <?php
-/**
- * PPOM Meta Class
- * @since version 15.0
- * 
- * */
  
  
 class PPOM_Meta {
