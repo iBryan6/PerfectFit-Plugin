@@ -416,7 +416,7 @@ function ppom_admin_simplify_meta($meta)
 	}
 }
 
-// Showing PPOM Edit on Product Page
+// Showing Edit on Product Page
 function ppom_admin_bar_menu()
 {
 
@@ -439,7 +439,7 @@ function ppom_admin_bar_menu()
 		$ppom_setting_url
 	);
 
-	$bar_title = "Edit PPOM ({$ppom->meta_title})";
+	$bar_title = "Cambiar Grupo ({$ppom->meta_title})";
 	$wp_admin_bar->add_node(array(
 		'id'     => 'ppom-setting-bar',
 		'title'  => sprintf(__("%s", 'ppom'), $bar_title),
@@ -457,7 +457,7 @@ function ppom_admin_bar_menu()
 			'action' => 'ppom_attach'
 		);
 		$apply_link = add_query_arg($apply_arg, $apply_link);
-		$bar_title = "Apply {$meta->productmeta_name}";
+		$bar_title = "Aplicar {$meta->productmeta_name}";
 		$wp_admin_bar->add_node(array(
 			'id'    	=> "ppom-setting-bar-{$meta->productmeta_id}",
 			'title' 	=> sprintf(__("%s", 'ppom'), $bar_title),

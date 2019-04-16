@@ -818,7 +818,7 @@ function show_wc_custom_message()
     if (is_product() && isset($_GET['ppom_title'])) {
 
         $meta_title = $_GET['ppom_title'];
-        wc_add_notice(sprintf(__("PPOM Meta Successfully Changed to - %s", 'ppom'), $meta_title));
+        wc_add_notice(sprintf(__("El Grupo se ha cambiado exitosamente a - %s", 'ppom'), $meta_title));
     }
 }
 }
